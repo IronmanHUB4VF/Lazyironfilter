@@ -18,7 +18,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/9354a124921994bf84d86.jpg https://telegra.ph/file/8233d87aedf440497a428.jpg https://telegra.ph/file/b4ba8852086d311226e1d.jpg https://telegra.ph/file/55c8dbfa80cf494a2af50.jpg https://telegra.ph/file/a5ecb192e1a0cae82412a.jpg https://telegra.ph/file/e3c85682af8c575a78b5d.jpg https://telegra.ph/file/0355bd3a158f22171f2d5.jpg https://telegra.ph/file/b64a61bbe2245c5ca6141.jpg https://telegra.ph/file/c545eaea593e14d256b25.jpg https://telegra.ph/file/a883451badabf41bb5fe8.jpg https://telegra.ph/file/4e2f727e0055e47c19b9e.jpg https://telegra.ph/file/52fbb1e7864a571e7fa23.jpg https://telegra.ph/file/4147c2a1086e6041c31cb.jpg https://telegra.ph/file/72f563d7c4bedf1b2221c.jpg https://telegra.ph/file/a235ea8103a073c3879cf.jpg')).split()
 
 # Admins, Channels & Users
@@ -42,7 +42,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'LazyDeveloper')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [Movies Adaa™](https://t.me/real_MoviesAdda2)</b>⚡\n\n🎦 <b>File Name: </b> ➥  <i>{file_caption}</i>\n⚙️ <b>Size: </b><i>{file_size}</i>\n\n                ❤️<b>WE LOVE YOU</b>❤️\n🔥  ↭ <b>Join Now [MoviesAdda™](https://t.me/real_MoviesAdda2)</b> ↭  🔥")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by @HUB4VF</b>⚡\n\n🎦 <b>File Name: </b> ➥  <i>{file_caption}</i>\n⚙️ <b>Size: </b><i>{file_size}</i>\n\n                ❤️<b>WE LOVE YOU</b>❤️\n🔥  ↭ <b>Join Now @HUB4VF</b> ↭  🔥")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌IMDb Data by: @LazyDeveloper \n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 \n\n♥️ we are nothing without you ♥️ \n\n💛 Please Share Us 💛\n\n⚠️Click on the button 👇 below to get your query privately")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
